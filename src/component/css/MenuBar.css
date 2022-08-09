@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.MenuBar{
+    display: flex;
+    justify-content: space-between;
+}
+/* 로고부분 */
+.MenuBar h1{
+    margin-top:20px;
+    margin-left:40px;
+}
+.MenuBar h1 a{
+    color:#333;
+    text-decoration: none;
+}
+.MenuBar h1 a:hover{
+    text-decoration: none;
+}
+/* 메뉴부분 */
+.MenuBar ul{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+.MenuBar ul li {
+    margin-top:40px;
+    padding: 0 60px; 
+
+}
+.MenuBar ul li a, .reservation a{
+    text-decoration: none;
+    color: #333;
+}
+.MenuBar ul li a{
+    display: inline-block;
+    position: relative;
+}
+.MenuBar ul li a::before{
+    content:""; 
+    position: absolute;
+    right: 50%; 
+    bottom: 0; 
+    width: 0; 
+    height: 2px;
+    background-color: #333; 
+    transition: all .5s;
+}
+.MenuBar ul li a::after{
+    content:""; 
+    position: absolute;
+    left: 50%; 
+    bottom: 0; 
+    width: 0; 
+    height: 2px;
+    background-color: #333; 
+    transition: all .5s;
+}
+.MenuBar ul li a:hover:before{
+    width: 50%;
+    
+}
+.MenuBar ul li a:hover:after{
+    width: 50%;
+    
+}
+/* 예약부분 */
+.reservation{
+    margin-top:40px;
+    margin-right: 60px;
+    font-size: 20px;
+    border: 2px solid  #333;
+    padding: 5px;
+}
+
+.reservation:hover{
+    background-color: #333;
+    animation-duration: 3s;
+    animation-name: reservationbtn;
+    
+ 
+}
+.reservation a:hover{
+    color: #fff;
+   
+}
+.MenuBar2{
+    display: none;
+}
+.hidemenu{
+    display: none; 
+}
+/* 키프레임부분 */
+@keyframes reservationbtn {
+    from {
+        background-color: #fff;
+    }
+  
+    to {
+        background-color: #333;
+    }
+  }
+
+  /* 반응형 */
+  @media screen and (max-width: 874px){
+    .MenuBar h1{
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    .MenuBar ul li {
+        padding: 0 30px;
+
+    }
+    .reservation{
+        margin-right: 60px;
+        font-size: 18px;
+        border: 2px solid  #333;
+
+    }
+  }
+  @media screen and (max-width: 766px){
+    .MenuBar h1{
+        font-size: 30px; 
+    }
+    .MenuBar ul li {
+        padding: 0 20px;
+        font-size: 18px;
+    }
+    .reservation{
+        font-size: 15px;
+      
+    }
+
+  }
+  @media screen and (max-width: 610px){
+    .MenuBar{
+        display: none;
+
+    }
+
+    .MenuBar2{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .MenuBar2 h1{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left:40px;
+    }
+    .MenuBar2 h1 a{
+        color: #333;
+        text-decoration: none;
+    }
+    .MenuBar2 h1 a:hover{
+        color: #333;
+        text-decoration: none;
+    }
+    .clickmenutoggle{
+        margin-top: 30px;
+    }
+    .hidemenu{
+        width:100%;
+        height:80px;
+        list-style: none;
+        display: block;
+    }
+    .hidemenu li {
+        width:100%;
+        height: 40px;
+        border: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+        font-size: 20px;
+    }
+    .hidemenu li a{
+        color: #333;
+        text-align: center;
+        text-decoration: none;
+       
+    }
+    .hidemenu li:hover{
+        background-color: rgba(0,0,0,0.25);
+        color: #fff;   
+    }
+    .hidemenu li:hover a{
+        color: #fff;
+    }
+
+}
+  /* @media screen and (max-width: 1185px){
+    .clickmenutoggle{
+        margin-top:20px;
+        margin-left:75%;
+
+      }
+  }
+  @media screen and (max-width: 950px){
+    .clickmenutoggle{
+        margin-top:20px;
+        margin-left:70%;
+
+      }
+      .MenuBar2 h1{
+        font-size: 35px;
+      }
+  }
+  @media screen and (max-width: 793px){
+    .clickmenutoggle{
+        margin-top:20px;
+        margin-left:65%;
+
+    }
+    .MenuBar2 h1{
+        font-size: 30px;
+      }
+
+  }
+  @media screen and (max-width: 684px){
+    .clickmenutoggle{
+        margin-top:20px;
+        margin-left:60%;
+
+      }
+  }
+  @media screen and (max-width: 604px){
+    .clickmenutoggle{
+        margin-top:20px;
+        margin-left:53%;
+
+      }
+  }
+  @media screen and (max-width: 518px){
+    .clickmenutoggle{
+        margin-top:20px;
+        margin-left:49%;
+
+      }
+  } */

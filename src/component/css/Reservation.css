@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.web_reservation_info{
+    display: none;
+}
+.reservation_form{
+    display: flex;
+    margin-top: 8%;
+    border: 1px solid rgba(0, 0,0,0.25);
+    width: 80%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+.line{
+    width:3px;
+    height: 300px;
+    background-color: rgba(0, 0,0,0.25);
+    margin-left: 12%;
+    margin-top: 15%;
+
+}
+.reservation_info{
+    margin-top: 18%; 
+    margin-left: 11%;
+    
+}
+.reservation_info h2{
+    font-size: 3rem;
+    animation: About 5s;
+}
+.reservation_info p{
+    font-size: 1.2rem;
+    margin-top: 3%;
+    animation: About 5s;
+}
+
+#reservForm {
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+   
+}
+@media screen and (max-width: 1673px){
+
+    #reservForm {
+        width: 40%;
+    }
+    .line{
+        width:3px;
+        height: 300px;
+        background-color: rgba(0, 0,0,0.25);
+        margin-left: 10%;
+        margin-top: 15%;
+    
+    }
+}
+@media screen and (max-width: 1546px){
+    .line{
+        width:3px;
+        height: 300px;
+        background-color: rgba(0, 0,0,0.25);
+        margin-left: 7%;
+        margin-top: 15%;
+    
+    }
+}
+@media screen and (max-width: 1424px){
+    .line{
+        width:3px;
+        height: 300px;
+        background-color: rgba(0, 0,0,0.25);
+        margin-left: 5%;
+        margin-top: 15%;
+    
+    }
+}
+@media screen and (max-width: 1253px){
+    .reservation_info{
+        margin-top: 28%; 
+        margin-left: 5%;
+        
+    }
+    .reservation_info h2{
+        font-size: 2rem;
+        animation: About 5s;
+    }
+    .reservation_info p{
+        font-size: 1rem;
+        margin-top: 3%;
+        animation: About 5s;
+    }
+    
+    .line{
+        width:3px;
+        height: 300px;
+        background-color: rgba(0, 0,0,0.25);
+        margin-left: 8%;
+        margin-top: 20%;
+    
+    }
+}
+@media screen and (max-width: 1000px){
+    .reservation_info{
+        margin-top: 30%; 
+        margin-left: 5%;
+        
+    }
+   .line{
+       display: none;
+   }
+
+}
+@media screen and (max-width: 895px){
+    .reservation_info{
+      display: none;
+    }
+    .web_reservation_info{
+        display: block;
+    }
+    .web_reservation_info h2{
+        margin-top: 15%;
+        margin-left: 8%;
+        animation: About 5s;
+        
+    }
+    .web_reservation_info p{
+        margin-top: 2%;
+        margin-left: 8%;
+        animation: About 5s;
+    }
+}
+

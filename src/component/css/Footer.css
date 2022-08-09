@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.Footer{
+    background: #333;
+    width:100%;
+    height: 200px;
+    color:#fff;
+    
+
+}
+.Footer h1{
+    padding-top: 20px;
+    margin-left: 40px;
+}
+.Footer h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+.Footer address{
+    margin-left: 30%;
+}

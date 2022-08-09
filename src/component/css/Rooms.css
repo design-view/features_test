@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.rooms{
+    margin-top: 120px;
+    margin-left: 5%;
+}
+
+.rooms h1{
+    font-size: 100px;
+    margin-left: 50px;
+    position: relative;
+}
+.decoroom{
+    z-index: -1;
+    width:200px;
+    height: 200px;
+    display: block;
+    background-color: rgba(17, 116, 146, 0.02);
+    position: absolute;
+    top:180px;
+    left:0;
+
+}
+.rooms p{
+    margin-left: 50px;
+    font-size:20px; 
+}
+
+.roomintro h1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.roomintro ul{
+    margin-left: 10%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.roomintro p a{
+    margin-left: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(96, 119, 224);
+}
+.icons{
+    display: flex;
+    width:80%;
+    border-top: 2px solid rgb(150, 105, 97);
+    text-align: center;
+    margin:auto;
+    margin-top: 180px;
+}
+
+.icons img{
+    margin-left:40px;
+    font-size: 25px;
+    margin-top: 27px;
+    object-fit:cover;
+    width: 40px;
+    height: 40px;
+
+}
+@media screen and (max-width: 1620px){
+    .icons img{
+        margin-left:35px;
+    }
+}
+@media screen and (max-width: 1470px){
+    .icons img{
+        margin-left:35px;
+        width: 35px;
+        height: 35px;
+    
+    }
+}
+@media screen and (max-width: 1387px){
+    .roomintro h1{
+        font-size: 35px;
+    }
+    .icons{
+        margin-top: 100px;
+    }
+    .icons img{
+        margin-left:30px;
+        width: 35px;
+        height: 35px;
+    
+    }
+}
+
+@media screen and (max-width: 1287px){
+    
+    .icons img{
+        margin-left:25px;
+        width: 35px;
+        height: 35px;
+    
+    }
+    .roomintro P a{
+        margin-left: 70%;
+    }
+}
+@media screen and (max-width: 1139px){
+    .icons img{
+        margin-left:25px;
+        width: 25px;
+        height: 25px;
+    
+    }
+}
+
+@media screen and (max-width: 1021px){
+    .roomintro P a{
+        font-size: 16px;
+    }
+    .icons img{
+        margin-left:20px;
+    }
+}
+@media screen and (max-width: 840px){
+    .rooms h1{
+        font-size: 60px;
+    }
+    .roomintro h1{
+        font-size: 30px; 
+    }
+    /* .roomintro P a{
+        margin-left: 70%;
+    } */
+    .icons img{
+        font-size: 18px;
+        margin-left:15px;
+    }
+}
+@media screen and (max-width: 760px){
+    .icons img{
+        font-size: 10px; 
+        margin-left:10px;
+        width:30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 688px){
+    
+}
+@media screen and (max-width: 600px){
+    .rooms h1{
+        font-size: 50px;
+    }
+    .rooms p{
+        font-size: 15px; 
+    }
+    .roomintro ul {
+        font-size: 18px;
+    }
+    .icons img{
+        font-size: 10px; 
+        margin-left:10px;
+        width:25px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 549px){
+    /* .roomintro P a{
+        margin-left: 60%;
+    } */
+}
+@media screen and (max-width: 500px){
+    .rooms{
+        margin-top: 80px;
+    }
+    .icons img{
+        width:20px;
+        height: 20px; 
+    }
+    .roomintro h1{
+        font-size: 23px;
+    }
+    .roomintro ul {
+        margin-left:13%;
+    }
+    .roomintro P {
+        margin-top: 40%;
+    }
+    .icons{
+        margin-top: 32%;
+    }
+    .icons img{
+        object-fit:cover ;
+    }
+}
